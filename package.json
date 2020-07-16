@@ -8,7 +8,6 @@
   "author": "ag",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "@babel/core": "^7.10.5",
     "jest": "^26.1.0"
   }
 }
