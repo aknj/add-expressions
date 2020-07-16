@@ -1,3 +1,8 @@
+const round = num => {
+  const precision = 1e15;
+  return Math.round(num * precision) / precision;
+}
+
 const addExpressions = (exprA, exprB) => {
   // expressions are stored in Map objects, where each term is represented by
   // an exponent => coefficient pair
@@ -11,7 +16,7 @@ const addExpressions = (exprA, exprB) => {
 
   for (let [exponent, coefficientA] of exprA) {
     if (exprB.has(exponent)) {
-      const sumOfCoefficients = coefficientA + exprB.get(exponent);
+      const sumOfCoefficients = round(coefficientA + exprB.get(exponent));
 
       if (sumOfCoefficients !== 0) {
         output.set(exponent, sumOfCoefficients);
