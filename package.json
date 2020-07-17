@@ -2,11 +2,15 @@
   "name": "add-expressions",
   "version": "1.0.0",
   "description": "",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aknj/add-expressions.git"
+  },
+  "author": "ag",
   "scripts": {
     "test": "jest"
   },
-  "author": "ag",
-  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "jest": "^26.1.0"
   }
